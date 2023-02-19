@@ -1,0 +1,67 @@
+body {
+    background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20190223/ourmid/pngtree-game-volcano-advertising-background-backgroundblack-backgroundlight-spotstar-image_72467.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+
+.container {
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    color: #FFA07A;
+
+  }
+  
+  .board {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    width: 300px;
+    height: 300px;
+    border: 5px solid black;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .cell {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-sizing: border-box; /* include border in cell's width and height */
+  }
+  
+  .cell:hover {
+    background-color: rgba(255, 255, 255, 0.5); /* white color with 50% opacity */
+  }
+  
+  #reset {
+    background-color: #db5461;
+    color: #fff;
+    border: 2px solid #db5461;
+    padding: 20px 25px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 20px;
+  }
+  .cell.x::before {
+    content: "X";
+  }
+  
+  .cell.o::before {
+    content: "O";
+  }
+  
